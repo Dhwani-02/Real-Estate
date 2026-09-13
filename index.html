@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Helix Residences | Cinematic Dusk Courtyard</title>
+  
+  <!-- Premium Typography: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="css/style.css?v=20">
+</head>
+<body>
+
+  <!-- ========================================================================
+       PRELOADER & BUFFER PROGRESS
+       ======================================================================== -->
+  <div id="preloader">
+    <div class="loader-brand">THE HELIX</div>
+    <div class="loader-subtitle">Cinematic Architectural Experience</div>
+    <div class="loader-bar-container">
+      <div id="loader-bar" class="loader-bar"></div>
+    </div>
+    <div id="loader-status" class="loader-status">INITIALIZING HIGH-DEFINITION FRAMES...</div>
+  </div>
+
+  <!-- ========================================================================
+       NAVIGATION HEADER
+       ======================================================================== -->
+  <header class="site-header">
+    <a href="#hero-scroll" class="brand-wrapper">
+      <div class="brand-mark"></div>
+      <span class="brand-title">THE HELIX</span>
+    </a>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#waypoints" class="nav-link">Perspectives</a></li>
+        <li><a href="#residences" class="nav-link">Residences</a></li>
+        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+        <li><a href="#inquire" class="nav-link">Inquire</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Web Audio Ambient Twilight Soundscape -->
+      <button id="audio-btn" class="btn-audio" title="Toggle Ambient Twilight Soundscape" aria-label="Toggle Ambient Audio">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+        </svg>
+      </button>
+
+      <a href="#inquire" class="btn-primary">
+        <span>Reserve Tour</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION: PINNED CANVAS SCROLL EXPERIENCE
+       ZERO GRADIENT BOXES / ZERO CARD BACKGROUNDS - PURE FLOATING TYPOGRAPHY
+       ======================================================================== -->
+  <section id="hero-scroll" class="hero-scroll-container">
+    <div class="canvas-viewport">
+      <!-- High-Performance Frame Canvas (16:9 Mathematically Preserved) -->
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- Clean Floating Story Titles (NO GRADIENTS, NO BOXES, NO BORDERS) -->
+      <div class="story-overlays-wrapper">
+        
+        <!-- Milestone 1: 0% - 22% (Center) -->
+        <article class="story-card active" data-start="0.00" data-end="0.22">
+          <div class="story-tag">A Flight Into Twilight</div>
+          <h1 class="story-heading">THE HELIX <span class="gold-text">RESIDENCES</span></h1>
+          <p class="story-desc">
+            Looking upward from the base courtyard at dusk — an organic spiral ascending into the evening sky.
+          </p>
+        </article>
+
+        <!-- Milestone 2: 26% - 48% (Left Aligned) -->
+        <article class="story-card" data-start="0.26" data-end="0.48" data-align="left">
+          <div class="story-tag">Parametric S-Curve</div>
+          <h2 class="story-heading">SCULPTED BY <span class="gold-text">TWILIGHT</span></h2>
+          <p class="story-desc">
+            Tracing the curving facade where warm golden interior lights mirror the blue-purple dusk.
+          </p>
+        </article>
+
+        <!-- Milestone 3: 52% - 74% (Right Aligned) -->
+        <article class="story-card" data-start="0.52" data-end="0.74" data-align="right">
+          <div class="story-tag">Zero-Gravity Perspective</div>
+          <h2 class="story-heading">COURTYARD <span class="gold-text">BALCONIES</span></h2>
+          <p class="story-desc">
+            Gliding past private cantilevered glass terraces framed by gentle courtyard tree branches.
+          </p>
+        </article>
+
+        <!-- Milestone 4: 78% - 98% (Center) -->
+        <article class="story-card" data-start="0.78" data-end="0.98">
+          <div class="story-tag">The Celestial Summit</div>
+          <h2 class="story-heading">THE CELESTIAL <span class="gold-text">CROWN</span></h2>
+          <p class="story-desc">
+            The spiral opens completely to the twilight heavens, culminating in panoramic penthouse sanctuaries.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Bottom HUD & Scrubber -->
+      <div class="hero-hud">
+        <!-- Autoplay Tour Mode Toggle -->
+        <div class="hud-panel">
+          <button id="auto-tour-btn" class="hud-btn" aria-label="Start Auto Tour">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Auto Tour
+          </button>
+        </div>
+
+        <!-- Scrubber & Precise Frame Status -->
+        <div class="hud-panel hud-timeline-wrapper">
+          <div id="hud-scrubber" class="hud-scrubber" title="Click or drag to jump to any frame">
+            <div id="hud-progress" class="hud-scrubber-progress"></div>
+            <div id="hud-handle" class="hud-scrubber-handle"></div>
+          </div>
+          <div class="hud-counter">
+            FRAME <span id="hud-current-frame" class="current">001</span> / 300
+          </div>
+        </div>
+
+        <!-- Scroll Down Hint -->
+        <div class="hud-panel hud-scroll-hint">
+          <span class="scroll-indicator-dot"></span>
+          <span>Scroll to Glide</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE WAYPOINTS BAR (PERSPECTIVE SELECTOR)
+       ======================================================================== -->
+  <section id="waypoints" class="waypoints-bar">
+    <div class="container">
+      <div class="waypoints-inner">
+        <span class="waypoints-label">FLYTHROUGH PERSPECTIVES:</span>
+        <div class="waypoint-pills">
+          <button class="waypoint-pill active" data-target-frame="0">
+            <span class="pill-dot"></span>
+            <span>01. Base Courtyard</span>
+          </button>
+          <button class="waypoint-pill" data-target-frame="95">
+            <span class="pill-dot"></span>
+            <span>02. S-Curve Facade</span>
+          </button>
+          <button class="waypoint-pill" data-target-frame="185">
+            <span class="pill-dot"></span>
+            <span>03. Glowing Terraces</span>
+          </button>
+          <button class="waypoint-pill" data-target-frame="295">
+            <span class="pill-dot"></span>
+            <span>04. Celestial Crown</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EDITORIAL SECTION: ARCHITECTURAL DISTINCTION
+       ======================================================================== -->
+  <section id="architecture" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Parametric Innovation</span>
+        <h2 class="section-title">An Organic Form Rising Into Dusk</h2>
+        <p class="section-subtitle">
+          Engineered as a continuous S-curved cantilever that optimizes cross-atrium ventilation, sound deflection, and 300-degree twilight solar angles.
+        </p>
+      </div>
+
+      <!-- Architectural Key Specs Cards with Glowing Hover Effects -->
+      <div class="specs-grid">
+        <div class="spec-card">
+          <div class="spec-badge">PORTFOLIO</div>
+          <div class="spec-number">48</div>
+          <div class="spec-label">Curated Residences</div>
+          <p class="spec-desc">Custom-angled floorplans providing private courtyard views with zero direct line-of-sight overlooking.</p>
+          <div class="spec-stat-line">
+            <span>Status</span>
+            <span class="gold-highlight">12 Suites Available</span>
+          </div>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-badge">GEOMETRY</div>
+          <div class="spec-number">300°</div>
+          <div class="spec-label">Twilight Sightlines</div>
+          <p class="spec-desc">Sweeping bronze curtain wall wrapping around the central open void for uninterrupted sky views.</p>
+          <div class="spec-stat-line">
+            <span>Glazing</span>
+            <span class="gold-highlight">Acoustic STC 58</span>
+          </div>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-badge">ATRIUM</div>
+          <div class="spec-number">38m</div>
+          <div class="spec-label">Open-Air Void</div>
+          <p class="spec-desc">Natural central chimney creating thermal drafts that circulate fresh evening air through every terrace.</p>
+          <div class="spec-stat-line">
+            <span>Efficiency</span>
+            <span class="gold-highlight">LEED Platinum</span>
+          </div>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-badge">OUTDOOR</div>
+          <div class="spec-number">14</div>
+          <div class="spec-label">Skyward Terraces</div>
+          <p class="spec-desc">Deep cantilevered outdoor living salons sheltered within the natural aerodynamic vortex of the spiral.</p>
+          <div class="spec-stat-line">
+            <span>Terrace Depth</span>
+            <span class="gold-highlight">Up to 22 FT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Architectural Detail Explorer -->
+      <div class="arch-feature-hub">
+        <div class="arch-hub-tabs">
+          <button class="hub-tab-btn active" data-hub="skin">
+            <span class="tab-num">01</span>
+            <span>Acoustic Bronze Skin</span>
+          </button>
+          <button class="hub-tab-btn" data-hub="atrium">
+            <span class="tab-num">02</span>
+            <span>Botanical Central Void</span>
+          </button>
+          <button class="hub-tab-btn" data-hub="terraces">
+            <span class="tab-num">03</span>
+            <span>Cantilevered Terraces</span>
+          </button>
+          <button class="hub-tab-btn" data-hub="lighting">
+            <span class="tab-num">04</span>
+            <span>Circadian Twilight Glow</span>
+          </button>
+        </div>
+
+        <div class="arch-hub-content">
+          <div id="hub-panel" class="hub-panel-inner">
+            <div class="hub-panel-left">
+              <span class="section-tag" id="hub-tag">Engineering Distinction</span>
+              <h3 id="hub-title">Triple-Glazed Acoustic Bronze Glazing</h3>
+              <p id="hub-desc">
+                Engineered with dual low-emissivity bronze coatings and argon-gas insulation, the curved glass facade reflects ambient urban glare while locking in peaceful silence and warm thermal balance.
+              </p>
+              <div class="hub-metrics" id="hub-metrics">
+                <div class="metric-item">
+                  <div class="metric-val">STC 58</div>
+                  <div class="metric-lbl">Acoustic Decibel Isolation</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">0.24 U</div>
+                  <div class="metric-lbl">Thermal Efficiency Rating</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-val">99.8%</div>
+                  <div class="metric-lbl">UV Radiation Shielding</div>
+                </div>
+              </div>
+            </div>
+            <div class="hub-panel-right">
+              <div class="blueprint-card">
+                <div class="blueprint-header">
+                  <span>FACADE SCHEMATIC // AX-01</span>
+                  <span class="gold-badge">PARAMETRIC S-CURVE</span>
+                </div>
+                <div class="blueprint-graphic">
+                  <div class="spiral-svg-art">
+                    <svg viewBox="0 0 200 200" width="160" height="160">
+                      <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(223,178,107,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                      <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(96,165,250,0.4)" stroke-width="1.5"/>
+                      <path d="M 30,100 Q 100,20 170,100 T 30,100" fill="none" stroke="#dfb26b" stroke-width="2.5"/>
+                      <circle cx="100" cy="100" r="8" fill="#dfb26b"/>
+                    </svg>
+                  </div>
+                  <div class="blueprint-meta">
+                    <div>RADIUS: <strong>42.8M</strong></div>
+                    <div>CURVE: <strong>FIBONACCI SPIRAL</strong></div>
+                    <div>ASPECT: <strong>WEST DUSK ZENITH</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION: RESIDENCES & FLOORPLANS (INTERACTIVE SUITE SHOWCASE)
+       ======================================================================== -->
+  <section id="residences" class="section residences-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Residential Collections</span>
+        <h2 class="section-title">The Curated Suites</h2>
+        <p class="section-subtitle">
+          Three bespoke configurations designed around twilight exposure, private cantilevered outdoor living, and double-height ceiling volumes.
+        </p>
+      </div>
+
+      <!-- Suite Filter Tabs -->
+      <div class="suite-filter-nav">
+        <button class="suite-filter-btn active" data-filter="all">All Residences</button>
+        <button class="suite-filter-btn" data-filter="courtyard">Courtyard Suites (2 Bed)</button>
+        <button class="suite-filter-btn" data-filter="terrace">Grand Terraces (3 Bed)</button>
+        <button class="suite-filter-btn" data-filter="penthouse">Penthouses (4 Bed)</button>
+      </div>
+
+      <div class="suites-grid">
+        
+        <!-- Suite 1: Courtyard Suite -->
+        <div class="suite-card" data-category="courtyard">
+          <div class="suite-top-badge">FLOORS 02 — 07</div>
+          <h3 class="suite-name">The Courtyard Suite</h3>
+          <p class="suite-summary">Direct garden vistas into the central zen courtyard through panoramic floor-to-ceiling glass.</p>
+          
+          <div class="suite-specs-bar">
+            <div class="spec-mini">
+              <span>BEDROOMS</span>
+              <strong>2 Bed</strong>
+            </div>
+            <div class="spec-mini">
+              <span>BATHROOMS</span>
+              <strong>2.5 Bath</strong>
+            </div>
+            <div class="spec-mini">
+              <span>INTERIOR</span>
+              <strong>2,150 SQ.FT</strong>
+            </div>
+          </div>
+
+          <ul class="suite-features-list">
+            <li>Private covered balcony with infrared twilight heating</li>
+            <li>Custom bronze fluted kitchen island with Calacatta marble</li>
+            <li>Direct courtyard botanical views with acoustic dampening</li>
+            <li>Primary bathroom with freestanding soaking tub</li>
+          </ul>
+
+          <div class="suite-footer">
+            <div class="suite-price-tag">
+              <span>STARTING FROM</span>
+              <strong>$3,450,000</strong>
+            </div>
+            <a href="#inquire" class="btn-primary" style="justify-content: center;">
+              Inquire Suite
+            </a>
+          </div>
+        </div>
+
+        <!-- Suite 2: The Helix Grand Terrace (Featured) -->
+        <div class="suite-card featured" data-category="terrace">
+          <div class="suite-top-badge featured-badge">FEATURED RESIDENCE · FLOORS 08 — 15</div>
+          <h3 class="suite-name">The Helix Grand Terrace</h3>
+          <p class="suite-summary">Continuous S-curve balcony providing dramatic 270-degree dusk panoramas and indoor-outdoor entertainment salons.</p>
+          
+          <div class="suite-specs-bar">
+            <div class="spec-mini">
+              <span>BEDROOMS</span>
+              <strong>3 Bed</strong>
+            </div>
+            <div class="spec-mini">
+              <span>BATHROOMS</span>
+              <strong>3.5 Bath</strong>
+            </div>
+            <div class="spec-mini">
+              <span>INTERIOR</span>
+              <strong>3,680 SQ.FT</strong>
+            </div>
+          </div>
+
+          <ul class="suite-features-list">
+            <li>Wraparound cantilevered terrace with outdoor gas fireplace</li>
+            <li>Private elevator vestibule opening directly into residence</li>
+            <li>Sub-Zero, Wolf, and Gaggenau master culinary suite</li>
+            <li>Dedicated climate-controlled wine display for 120 bottles</li>
+          </ul>
+
+          <div class="suite-footer">
+            <div class="suite-price-tag">
+              <span>STARTING FROM</span>
+              <strong>$6,800,000</strong>
+            </div>
+            <a href="#inquire" class="btn-primary" style="justify-content: center;">
+              Inquire Suite
+            </a>
+          </div>
+        </div>
+
+        <!-- Suite 3: The Celestial Penthouse -->
+        <div class="suite-card" data-category="penthouse">
+          <div class="suite-top-badge">THE SUMMIT · FLOORS 16 — 18</div>
+          <h3 class="suite-name">The Celestial Penthouse</h3>
+          <p class="suite-summary">Crowning the top of the spiral with full 360-degree celestial courtyard opening and private sky-deck pool.</p>
+          
+          <div class="suite-specs-bar">
+            <div class="spec-mini">
+              <span>BEDROOMS</span>
+              <strong>4 Bed</strong>
+            </div>
+            <div class="spec-mini">
+              <span>BATHROOMS</span>
+              <strong>5 Bath</strong>
+            </div>
+            <div class="spec-mini">
+              <span>INTERIOR</span>
+              <strong>6,200 SQ.FT</strong>
+            </div>
+          </div>
+
+          <ul class="suite-features-list">
+            <li>Private open-air heated plunge pool overlooking skyline</li>
+            <li>Double-height 24ft glass gallery living salon</li>
+            <li>Exclusive rooftop observatory with motorized telescope dome</li>
+            <li>Private 4-car climate-controlled subterranean bay</li>
+          </ul>
+
+          <div class="suite-footer">
+            <div class="suite-price-tag">
+              <span>PURCHASE INQUIRY</span>
+              <strong>Price Upon Request</strong>
+            </div>
+            <a href="#inquire" class="btn-primary" style="justify-content: center;">
+              Request Dossier
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION: AMENITIES (LUXURY INTERACTIVE GRID)
+       ======================================================================== -->
+  <section id="amenities" class="section amenities-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Private Club Privileges</span>
+        <h2 class="section-title">Twilight Amenities</h2>
+        <p class="section-subtitle">
+          Curated lifestyle sanctuaries designed exclusively for resident members and their guests.
+        </p>
+      </div>
+
+      <div class="amenities-luxury-grid">
+        
+        <!-- Amenity 1 -->
+        <div class="amenity-card">
+          <div class="amenity-num">01</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="#dfb26b">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <h3 class="amenity-title">The Dusk Infinity Pool</h3>
+          <p class="amenity-desc">Suspended cantilevered heated magnesium pool overlooking the evening twilight city horizon with poolside fireplace lounges.</p>
+          <div class="amenity-detail-tag">84°F HEATED YEAR-ROUND</div>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity-card">
+          <div class="amenity-num">02</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="#dfb26b">
+              <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v10h-2V6h2m2-4h-6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Sommelier Vault & Tasting Salon</h3>
+          <p class="amenity-desc">Climate-managed private cellar with dedicated tasting lounges, member vintage storage lockers, and private sommelier service.</p>
+          <div class="amenity-detail-tag">2,400 BOTTLE CAPACITY</div>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity-card">
+          <div class="amenity-num">03</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="#dfb26b">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Celestial Sky Observatory</h3>
+          <p class="amenity-desc">Rooftop celestial viewing terrace equipped with high-powered automated optics to explore the constellations above the city.</p>
+          <div class="amenity-detail-tag">360° CELESTIAL DOME</div>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity-card">
+          <div class="amenity-num">04</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="#dfb26b">
+              <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z"/>
+            </svg>
+          </div>
+          <h3 class="amenity-title">White-Glove Fleet & Concierge</h3>
+          <p class="amenity-desc">Dedicated house chauffeur with private Rolls-Royce Spectre EV airport service, 24/7 security, and VIP lifestyle arrangements.</p>
+          <div class="amenity-detail-tag">24/7 DEDICATED STAFF</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION: VIP INQUIRY & PRIVATE TOUR BOOKING
+       ======================================================================== -->
+  <section id="inquire" class="section booking-section">
+    <div class="container">
+      <div class="booking-container">
+        
+        <div class="booking-info">
+          <span class="section-tag">Private Acquisition</span>
+          <h2>Experience The Courtyard Firsthand</h2>
+          <p>
+            Private showings of the sales gallery, finished mock-up suites, and completed architectural scale model are conducted by personal appointment.
+          </p>
+
+          <div class="contact-meta">
+            <div class="contact-meta-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>The Helix Gallery, 880 Horizon Boulevard, Sky District</span>
+            </div>
+            <div class="contact-meta-item">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>+1 (800) 840-HELIX</span>
+            </div>
+            <div class="contact-meta-item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>concierge@helixresidences.luxury</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="inquiry-form" class="inquiry-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Lady / Lord / Mr. / Ms." required>
+            </div>
+            <div class="form-group">
+              <label for="email">Private Email</label>
+              <input type="email" id="email" class="form-input" placeholder="name@domain.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Direct Telephone</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="residence">Residence Collection</label>
+              <select id="residence" class="form-select">
+                <option value="terrace">The Helix Grand Terrace (3 Bed · $6.8M+)</option>
+                <option value="penthouse">The Celestial Penthouse (4 Bed · Upon Request)</option>
+                <option value="courtyard">The Courtyard Suite (2 Bed · $3.45M+)</option>
+                <option value="portfolio">Full Penthouse Collection</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Tour Date</label>
+            <input type="date" id="date" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label>Tour Preferences</label>
+            <div class="checkbox-row">
+              <label class="custom-checkbox">
+                <input type="checkbox" checked>
+                <span>Private Chauffeur Pickup</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" checked>
+                <span>Architectural Scale Model Tour</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 1.1rem; font-size: 0.85rem;">
+            Confirm Private Appointment
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero-scroll" class="brand-wrapper">
+          <div class="brand-mark"></div>
+          <span class="brand-title">THE HELIX RESIDENCES</span>
+        </a>
+        <div style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+          Cinematic Architectural Visualization & Residential Portfolio
+        </div>
+      </div>
+      <div class="footer-credits">
+        <div>&copy; 2026 The Helix Residences. All rights reserved. Equal Housing Opportunity.</div>
+        <div style="color: var(--gold-primary); font-family: var(--font-display);">300-FRAME CINEMATIC DRONE FLYTHROUGH</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Animation & Interactive Engine with Cache Buster -->
+  <script src="js/main.js?v=20"></script>
+</body>
+</html>
