@@ -1,0 +1,16 @@
+﻿# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp
+*.tmp
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+Hero Section img/
+drone-flythrough.mp4
+ezgif-67950c40db501d64-jpg.zip
