@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AURA SKY RESIDENCES — Sculpted Architectural Estates</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#492900",
+            "on-primary-fixed": "#2c1600",
+            "primary-fixed": "#ffdcbd",
+            "surface-variant": "#2f3543",
+            "surface-tint": "#f9ba7a",
+            "on-secondary-fixed-variant": "#6c3a00",
+            "tertiary": "#c1d1f5",
+            "primary-container": "#e5a96a",
+            "surface-container-highest": "#2f3543",
+            "inverse-on-surface": "#2a303f",
+            "outline-variant": "#514539",
+            "on-background": "#dde2f5",
+            "on-secondary": "#4c2700",
+            "tertiary-container": "#a6b5d9",
+            "surface-container-low": "#161b29",
+            "background": "#0d1320",
+            "secondary-fixed": "#ffdcc1",
+            "surface-bright": "#333948",
+            "primary-fixed-dim": "#f9ba7a",
+            "secondary": "#ffb779",
+            "on-tertiary-container": "#384665",
+            "error": "#ffb4ab",
+            "outline": "#9d8e81",
+            "on-tertiary-fixed": "#0a1b37",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#384765",
+            "surface": "#0d1320",
+            "on-secondary-fixed": "#2e1500",
+            "surface-container-lowest": "#080e1b",
+            "tertiary-fixed-dim": "#b7c6eb",
+            "on-surface": "#dde2f5",
+            "on-primary-container": "#673d05",
+            "on-surface-variant": "#d5c3b5",
+            "secondary-container": "#7d4401",
+            "on-error": "#690005",
+            "error-container": "#93000a",
+            "on-secondary-container": "#ffb778",
+            "on-primary-fixed-variant": "#673d05",
+            "surface-dim": "#0d1320",
+            "surface-container": "#1a1f2d",
+            "surface-container-high": "#242a38",
+            "inverse-surface": "#dde2f5",
+            "primary": "#ffc58b",
+            "inverse-primary": "#83541d",
+            "tertiary-fixed": "#d8e2ff",
+            "secondary-fixed-dim": "#ffb779"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "margin": "4rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "display-lg": ["Playfair Display", "serif"],
+            "label-lg": ["Manrope", "sans-serif"],
+            "label-sm": ["Manrope", "sans-serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "display-lg-mobile": ["Playfair Display", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "display-xl-mobile": ["Playfair Display", "serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "display-xl": ["Playfair Display", "serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"]
+          },
+          "fontSize": {
+            "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.18em", "fontWeight": "500" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.14em", "fontWeight": "600" }],
+            "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.35rem", "fontWeight": "400" }],
+            "display-xl-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "500" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "fontWeight": "500" }],
+            "display-xl": ["5rem", { "lineHeight": "5.5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .amber-glow {
+      box-shadow: 0 0 35px -5px rgba(229, 169, 106, 0.2);
+    }
+    .subtle-border {
+      border: 1px solid rgba(164, 179, 198, 0.12);
+    }
+    .hairline-gold {
+      border: 1px solid rgba(229, 169, 106, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary antialiased min-h-screen overflow-x-hidden">
+<!-- TOP APP BAR (Shared Component: editorial_luxury) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 dark:border-outline-variant/20 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 md:px-16 py-5 max-w-full">
+<!-- Brand Logo Anchor -->
+<a class="text-headline-sm font-headline-sm tracking-[0.2em] font-medium text-on-surface dark:text-on-surface flex items-center gap-3 group" href="#hero">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block transition-transform duration-500 group-hover:scale-125"></span>
+<span>AURA SKY RESIDENCES</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-label-md font-label-md uppercase tracking-widest text-primary dark:text-primary border-b border-primary dark:border-primary pb-1 cursor-pointer transition-all duration-300 ease-out" href="#architecture">Architecture</a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#residences">Residences</a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#amenities">Amenities</a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#gallery">Gallery</a>
+<a class="text-label-md font-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200 cursor-pointer" href="#pedigree">Pedigree</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-primary/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary text-primary transition-all duration-300 text-label-md font-label-md uppercase tracking-widest cursor-pointer amber-glow" href="#consultation">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>Private Viewing</span>
+</a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION WITH USER IMAGE CENTERPIECE -->
+<section class="relative min-h-[92vh] flex flex-col justify-between overflow-hidden" id="hero">
+<!-- Background Image with vignette & twilight lighting -->
+<div class="absolute inset-0 z-0">
+<img alt="Aura Sky Residences Architectural Spiral Facade" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlXGgoXNyTGXyn8I8GPkf9LSSaUjeONAhSImUCX08sy_DJLuwrnUIUJ8fhgRQL9DHXNmejj2JbSCV3PlQfnMjN3GBHEcQeQJU5zPuCdl6ofPHodoasxsnjQrXUgtLRQ-zH_rAJKu32VttjnJ4PkJi-BzmhY0v6XuM88urqdTxuDq0WVKfNruVsUxilgjPvTLkR0hbJUCyRCAuqv2-1uo91jWbgUx_gHiUE0E3Kv2VX7N7sxJZalforbroHp2NJV-3AWg"/>
+<!-- Dark Cinematic Vignette & Lighting overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-transparent to-background/70"></div>
+<div class="absolute inset-0 bg-background/25"></div>
+</div>
+<!-- Empty Spacer for top breathing room -->
+<div class="h-16"></div>
+<!-- Hero Content Monolith -->
+<div class="relative z-10 px-6 md:px-16 max-w-5xl py-12">
+<!-- Tag / Chip -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-high/80 backdrop-blur-md hairline-gold mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-primary">Pre-Market Architectural Portfolio</span>
+</div>
+<h1 class="text-display-lg md:text-display-xl font-display-xl text-on-surface leading-[1.08] tracking-tight mb-6">
+        Where Geometry <br/>
+<span class="italic font-display-lg text-primary">Meets Infinity.</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-light">
+        A limited collection of 48 bespoke curvilinear residences designed by world-renowned architectural masters, elevated above the metropolitan skyline in suspended twilight harmony.
+      </p>
+<!-- Hero Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-widest hover:bg-primary transition-all duration-300 amber-glow cursor-pointer" href="#consultation">
+<span>Schedule a Private Salon</span>
+<span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface-container-low/80 backdrop-blur-md subtle-border text-on-surface hover:border-primary/50 transition-all duration-300 font-label-md text-label-md uppercase tracking-widest group cursor-pointer" href="#gallery">
+<span class="material-symbols-outlined mr-2 text-primary group-hover:scale-110 transition-transform">play_circle</span>
+<span>Explore Virtual Tour</span>
+</a>
+</div>
+</div>
+<!-- Architectural Stats Bar / Ticker -->
+<div class="relative z-10 w-full bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/20 px-6 md:px-16 py-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+<div class="pt-3 md:pt-0 md:pr-6">
+<span class="text-display-lg-mobile font-display-lg-mobile text-primary block leading-none mb-1">48</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Limited Estates</span>
+</div>
+<div class="pt-3 md:pt-0 md:px-6">
+<span class="text-display-lg-mobile font-display-lg-mobile text-on-surface block leading-none mb-1">360°</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Uninterrupted Horizons</span>
+</div>
+<div class="pt-3 md:pt-0 md:px-6">
+<span class="text-display-lg-mobile font-display-lg-mobile text-primary block leading-none mb-1">8,500</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Sq. Ft. Sky Sanctuary</span>
+</div>
+<div class="pt-3 md:pt-0 md:pl-6">
+<span class="text-display-lg-mobile font-display-lg-mobile text-on-surface block leading-none mb-1">LEED</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Platinum Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ARCHITECTURAL NARRATIVE SECTION -->
+<section class="py-28 px-6 md:px-16 bg-surface-container-lowest border-b border-outline-variant/20" id="architecture">
+<div class="max-w-7xl mx-auto">
+<!-- Subtitle badge -->
+<div class="flex items-center gap-3 mb-4">
+<div class="h-[1px] w-12 bg-primary"></div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-widest">The Structural Narrative</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-6 space-y-6">
+<h2 class="text-headline-lg md:text-display-lg font-headline-lg text-on-surface tracking-tight leading-tight">
+            The Curvilinear Marvel: An Ode to Nocturnal Flow
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed font-light">
+            Defying the rectilinear constraints of contemporary skylines, AURA is sculpted like a continuous ribbon of amber-illuminated architectural bronze. Each spiral tier acts as an intuitive sun-shade, sculpting wind patterns while framing panoramic urban vistas.
+          </p>
+<p class="text-body-md font-body-md text-on-surface-variant/80 leading-relaxed font-light">
+            Conceived as a living dialogue between atmospheric gravity and fluid dynamics, the facade rotates organically around an atrium core. In the twilight hours, hidden linear luminaires transform the external ribs into an astronomical beacon.
+          </p>
+<!-- Quote Box -->
+<div class="p-6 rounded-lg bg-surface-container-low subtle-border border-l-2 border-l-primary mt-8">
+<p class="italic text-body-md font-body-md text-on-surface mb-3">
+              "We did not erect a tower; we folded the twilight atmosphere into an inhabitable spiral sculpture."
+            </p>
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-wider">— V. Moreau, Lead Design Architect</span>
+</div>
+</div>
+<!-- Pillar Grid -->
+<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-8 rounded-lg bg-surface-container subtle-border hover:border-primary/40 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Biophilic Terraces</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Cantilevered sky gardens integrated with automated drip hydration systems and indigenous flora at every residential elevation.
+            </p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container subtle-border hover:border-primary/40 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl">waves</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Parametric Cladding</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Precision-milled composite panels absorb airborne acoustic frequency while reflecting low-angled golden twilight photons.
+            </p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container subtle-border hover:border-primary/40 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl">pool</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Horizon Cantilevers</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Glass-bottom plunge basins suspended directly over structural curves, delivering zero-edge oceanic suspension in mid-air.
+            </p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container subtle-border hover:border-primary/40 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl">wb_twilight</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Photonic Glass</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Triple-glazed electrochromic apertures dynamically transition tint states according to solar incidence angles.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RESIDENCES SHOWCASE -->
+<section class="py-28 px-6 md:px-16 bg-surface" id="residences">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<div class="h-[1px] w-12 bg-primary"></div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-widest">Available Estates</span>
+</div>
+<h2 class="text-headline-lg md:text-display-lg font-headline-lg text-on-surface tracking-tight">
+            Curated Living Sanctuaries
+          </h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+          Each residence encompasses an expansive floor footprint with private elevator vestry and double-height ceiling voids.
+        </p>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex flex-wrap gap-3 mb-12">
+<button class="px-5 py-2 rounded-lg bg-primary text-on-primary text-label-md font-label-md uppercase tracking-wider transition-all">All Collections</button>
+<button class="px-5 py-2 rounded-lg bg-surface-container subtle-border text-on-surface-variant hover:text-on-surface text-label-md font-label-md uppercase tracking-wider transition-all">The Sky Villas (3–4 Bed)</button>
+<button class="px-5 py-2 rounded-lg bg-surface-container subtle-border text-on-surface-variant hover:text-on-surface text-label-md font-label-md uppercase tracking-wider transition-all">The Horizon Duplexes (4–5 Bed)</button>
+<button class="px-5 py-2 rounded-lg bg-surface-container subtle-border text-on-surface-variant hover:text-on-surface text-label-md font-label-md uppercase tracking-wider transition-all">The Celestial Penthouse</button>
+</div>
+<!-- Estates Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Residence Card 1 -->
+<div class="group bg-surface-container rounded-lg overflow-hidden subtle-border hover:border-primary/50 transition-all duration-500 flex flex-col">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Ultra luxurious modern penthouse living room at sunset with curved panoramic glass windows overlooking a glowing city skyline. Furnished with bespoke Italian velvet furniture in deep charcoal and warm ochre tones, with natural marble floors reflecting warm ambient twilight illumination and recessed golden architectural perimeter lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfo3nlYE2iHdCKxIXOY_0wMIH-BtTLGFfF7shc2uuhFG3FN8L2wqzpdoGEdVM_8I7QLaFskyZjltr_gX3LAXy5EVx5TTpJUxc_Duz9CQ4Nw2iD6TLt433YYHQmCAif2r_vOwBGJK-r-fdbkIzfyE-C17zYZzNxUPPU8OykLH4qzE8eclKn66TtVb97gtwMPtoAGb7Dmx--RmkN5WjU0OY2z-ytQ_0v7gK_TEIgqpTWYCNimP0--fQQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md hairline-gold text-label-sm font-label-sm uppercase tracking-wider text-primary">
+              Floors 28–42
+            </div>
+<div class="absolute bottom-4 left-4">
+<span class="text-headline-sm font-headline-sm text-on-surface font-semibold">The Aurelia Sky Villa</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div class="space-y-4 mb-6">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Configuration</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">3 Bedrooms · 3.5 Baths</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Interior Space</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">4,250 SQ. FT.</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Ceiling Height</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">12.5 FT. Clear</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Starting Price</span>
+<span class="text-headline-sm font-headline-sm text-primary font-medium">From $4,850,000</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-4 border-t border-outline-variant/20">
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-surface-container-highest text-on-surface hover:bg-surface-bright transition-colors" href="#consultation">Floorplan</a>
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-primary text-on-primary hover:bg-primary-container transition-colors" href="#consultation">Inquire</a>
+</div>
+</div>
+</div>
+<!-- Residence Card 2 -->
+<div class="group bg-surface-container rounded-lg overflow-hidden subtle-border hover:border-primary/50 transition-all duration-500 flex flex-col">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Double height luxury duplex interior showing an architectural sculptural spiral staircase made of dark burnished steel and light stone steps. Expansive two story glass curtain wall reveals dusk metropolitan skyline with amber architectural soffit lighting and refined minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVDkRyCf_UJ8c6kIs66q9i6KDj1-FSd0b_F7R64bRV7cz5kg6ifcg26gK1cB4CONyWKSnGJXLDnlQ-1GeIT8q4AYYG0WScprLluyrj6D6ujXJPhoYtTMh8HoGpzw63Pi0XEy3T--Derv-gBqtdmkWjbMB-mqI07AY2q72r3OVG5H73fp1UZKvF91QOnJDjpsNAYpV7kEq6FRMi2JVN6vjynqz2_-7xuw7h1n5fmQvK4apUrvsQbvd1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md hairline-gold text-label-sm font-label-sm uppercase tracking-wider text-primary">
+              Floors 43–54
+            </div>
+<div class="absolute bottom-4 left-4">
+<span class="text-headline-sm font-headline-sm text-on-surface font-semibold">The Meridian Duplex</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div class="space-y-4 mb-6">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Configuration</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">4 Bedrooms · 5 Baths</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Interior Space</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">6,820 SQ. FT.</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Ceiling Height</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">22.0 FT. Double Atrium</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Starting Price</span>
+<span class="text-headline-sm font-headline-sm text-primary font-medium">From $8,200,000</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-4 border-t border-outline-variant/20">
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-surface-container-highest text-on-surface hover:bg-surface-bright transition-colors" href="#consultation">Floorplan</a>
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-primary text-on-primary hover:bg-primary-container transition-colors" href="#consultation">Inquire</a>
+</div>
+</div>
+</div>
+<!-- Residence Card 3 -->
+<div class="group bg-surface-container rounded-lg overflow-hidden subtle-border hover:border-primary/50 transition-all duration-500 flex flex-col relative">
+<div class="absolute top-4 right-4 z-20 px-3 py-1 rounded bg-primary text-on-primary text-label-sm font-label-sm uppercase tracking-widest font-semibold">
+            Crown Jewel
+          </div>
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Spectacular high-floor master bedroom suite with wraparound curvilinear floor to ceiling glass windows looking out to twilight clouds and city lights. Architectural cove lighting in soft amber glows along the organic ceiling contours, with minimalist dark wood joinery and premium luxury textiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDErqsWEkDPvAqn5S7-kcWlDTqMESZMOaU-I0KpIWzcS4zkYHQrhp0djjZpihs8clw1RjNaPa99WR6ri2i0dP-0mhK62eYbO_TVLyb3dVER5AyGqe9d2_tG27ni6zepSAeBOmnVutDLL9-DCTMiXHTKXnr994XqgbC_eCwl7CvTMbovWF5a_uAfBZJBdgDRBfkW3-N2uhEr_r3MSrjGQuNcvP-UIUoBT-XISYx_mS-WCwxKk3pUQVb7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md hairline-gold text-label-sm font-label-sm uppercase tracking-wider text-primary">
+              Floors 55–58
+            </div>
+<div class="absolute bottom-4 left-4">
+<span class="text-headline-sm font-headline-sm text-on-surface font-semibold">The Celestial Penthouse</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div class="space-y-4 mb-6">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Configuration</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">6 Bedrooms · 8 Baths · Private Pool</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Interior Space</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">12,400 SQ. FT.</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Terrace Area</span>
+<span class="text-label-md font-label-md text-on-surface font-medium">3,600 SQ. FT. Wrap</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Starting Price</span>
+<span class="text-headline-sm font-headline-sm text-primary font-medium">Price Upon Request</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-4 border-t border-outline-variant/20">
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-surface-container-highest text-on-surface hover:bg-surface-bright transition-colors" href="#consultation">Floorplan</a>
+<a class="py-2.5 px-3 rounded text-center text-label-md font-label-md uppercase tracking-wider bg-primary text-on-primary hover:bg-primary-container transition-colors" href="#consultation">VIP Access</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- THE PENTHOUSE HORIZON SPOTLIGHT -->
+<section class="py-24 px-6 md:px-16 bg-surface-container-lowest border-y border-outline-variant/20 relative overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 relative">
+<div class="relative rounded-lg overflow-hidden subtle-border group">
+<img class="w-full h-[520px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cantilevered infinity edge swimming pool projecting off the side of a luxury modern skyscraper at dusk. Water glows with soft internal aqua light against deep twilight sky and the spiral architectural bronze facade, with sleek sunbeds and ambient amber lanterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljCf47ijHLwUthJIDKb_VF8-RNptrtYwF--bYsbVU0MdRkM2jr8WbY1MrTrRYdZhP3_69_dp6nnaMBOBxizgS9FKn1QUvONwbNAYTtZmNU4DMPLUwO9ubs66ozYLLzEvSIwEIfBM0yGj_Gb_rNPW7CUHvYVXdf_ARUxc4EjAEhZGjVFTLBr3HiS8HjjRV8B54GN2yKrnV8dAo7TkYjp3E4SughMe5P8rrd5WFTX2OY2EvgjKzKKyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary uppercase tracking-widest">Tri-Level Penthouse Sanctuary</span>
+<span class="text-label-sm font-label-sm text-on-surface/80">Elevation: 780 FT</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container subtle-border text-label-sm font-label-sm uppercase tracking-wider text-primary">
+          Crown Triplex Spotlight
+        </div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface leading-tight">
+          Suspended Above The Nocturnal Canopy
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed font-light">
+          Occupy the very apex of AURA. Spanning floors 56 to 58, this architectural pinnacle commands 360-degree unhindered horizons. Features include an exclusive private elevator shaft, dedicated butler quarters, and a 45-foot cantilevered glass-bottom lap pool projecting directly into the twilight air.
+        </p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Private automotive sky-garage with hydraulic lift system</span>
+</li>
+<li class="flex items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Astronomical observatory lounge with retractable skylight dome</span>
+</li>
+<li class="flex items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Temperature-controlled 1,200 bottle Grand Cru collection cellar</span>
+</li>
+</ul>
+<div class="pt-4">
+<a class="inline-flex items-center px-8 py-4 rounded bg-primary text-on-primary text-label-md font-label-md uppercase tracking-widest hover:bg-primary-container transition-all amber-glow" href="#consultation">
+            Request Penthouse Dossier
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SIGNATURE AMENITIES (Bento Luxury Grid) -->
+<section class="py-28 px-6 md:px-16 bg-surface" id="amenities">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<div class="inline-flex items-center gap-3 mb-3">
+<div class="h-[1px] w-8 bg-primary"></div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-widest">Resort Infrastructure</span>
+<div class="h-[1px] w-8 bg-primary"></div>
+</div>
+<h2 class="text-headline-lg md:text-display-lg font-headline-lg text-on-surface tracking-tight">
+          Curated Private Club Amenities
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4 font-light">
+          Three dedicated clubhouse levels dedicated exclusively to holistic rejuvenation, world-class gastronomy, and discrete executive aviation.
+        </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Bento 1: Sky Pool -->
+<div class="md:col-span-8 bg-surface-container rounded-lg overflow-hidden subtle-border group relative min-h-[380px] flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Indoor luxury heated infinity pool on the 50th floor with floor to ceiling glass walls overlooking a nocturnal city lights view. Subtle architectural warm amber cove lighting glows overhead while modern loungers line the edge of steaming calm water." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJEiqjMdMq8VDHz93xjO_kWagMI6udX2N9jh_0xq_rBmP9VhiV04SRF3lzJePiGOGiVDUREp3nidM1acNYUK1MMT6EDARetwaGZcMbJKqiqquXYO8OVJIHC0Ju3vMkOwNRKdshN11PutEKSBp5EUW530k5QFPc0N79SLXaLOuXzKv68TiSo2ZcrrmN3BBhzvk386kp7hHj8wF6XvdOXn6vHQlFyi1esl8kEV7Iyx4RFiTL1TugcUha"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 space-y-2 max-w-lg">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary font-semibold">Level 50 Wellness Pavilion</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">The Infinity Sky Pool &amp; Thermal Spa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light">
+              Heated ozone-treated water suspended 600 feet in the air, featuring private infrared saunas, cryotherapy pods, and sound-bath sanctuary.
+            </p>
+</div>
+</div>
+<!-- Small Bento 2: Sommelier Wine Vault -->
+<div class="md:col-span-4 bg-surface-container rounded-lg overflow-hidden subtle-border group relative min-h-[380px] flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dark luxury sommelier wine tasting cellar with backlit amber glass shelves containing thousands of vintage wine bottles. Dark smoked oak tasting table with crystal decanters and low-key warm mood illumination in an editorial luxury setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDze6KF-2_KLUxkOC65BkzcfRO7z88IY9R0z2LyDZ0oxuq5QspYk5vWSWKQnQI9NCff_G-v-GpNK-YBMwuUAn1vC6nZSS-o_t0wdRLqO5PmPUR_KeAYfSGMKQoMZSkFppBRvnY-AclJm9kyHgZ--qpGYxzZHPfoFah8YKDDhagxwA3cduTzWz7Ufshzm5kbzrxXTKtMqHcO6JQoxWzjjj3pIL7siRFGttEK_pnEObKHrulrGCrQqMPx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 space-y-2">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary font-semibold">Private Salon</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Sommelier Vault</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light">
+              Climate-controlled rare vintage storage with resident Master Sommelier curation.
+            </p>
+</div>
+</div>
+<!-- Small Bento 3: Screening Room & Dining -->
+<div class="md:col-span-5 bg-surface-container rounded-lg overflow-hidden subtle-border group relative min-h-[380px] flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Ultra luxury private screening cinema and dining lounge with bespoke curved acoustic timber wall paneling, plush dark charcoal velvet armchairs, and concealed ambient amber floor strip lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFH441SnpJx_nTcNjjSaO58JCANXnh4ZRIxD8RuewyRWB6uwbSU6PlOzoR5BSATDCwwNtSQPOKe3Phj8V-mHYvAmyUNc0h7v1IsfRvXqRPxEmf9rTE9b0bNlHiclj3TzO_7d6wTGKXv_PiVSGI1sV1f5k2a6ufQoUwG1NLHkTQGDSXewvtciIOcwOD3eSFcouTfB8DzmIPRxIllnOp5gLJfrcU587qoalhi9NLpZox531FxmanJrZa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 space-y-2">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary font-semibold">Culture &amp; Cinema</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Parametric Theater</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light">
+              Dolby Atmos acoustic precision with private catering kitchen for celebrity chef engagements.
+            </p>
+</div>
+</div>
+<!-- Large Bento 4: Helipad & Executive Chauffeur -->
+<div class="md:col-span-7 bg-surface-container rounded-lg overflow-hidden subtle-border group relative min-h-[380px] flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Private rooftop helipad illuminated with perimeter golden lighting at dusk, sleek executive helicopter landed on the rooftop deck with panoramic city skyline backdrop and tailored luxury chauffeur services below." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfHezZC3ioTCafwYno0cBJ5xdMlJmaa3O_iXQ72b6_dsRrbwi8PGd-ntLznaK9sStZ89FTvI3aHEXaYncvEkTkeh8IDpDuYAu9EKbU96W_ONnki-vpu4xFGVyjKZWn70ZzmrLcdku2RrYkk4XmP_Jhlw2zAV26zaGj9eJdhJKG4GkUrHNfAKmsUYLTt0kjEn44z5ETVZYabiOR17J8H41IiPHoan6DmuOdMGUTSWJrE_gESMSIKzEb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 space-y-2 max-w-md">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary font-semibold">Mobility &amp; Transit</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Rooftop Sky-Deck &amp; Helipad</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light">
+              Discrete point-to-point executive helicopter transfers and house fleet of electric Maybach vehicles.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARCHITECTURAL PEDIGREE & GALLERY -->
+<section class="py-28 px-6 md:px-16 bg-surface-container-lowest border-t border-outline-variant/20" id="pedigree">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="h-[1px] w-12 bg-primary"></div>
+<span class="text-label-md font-label-md text-primary uppercase tracking-widest">Architectural Pedigree</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+            Crafted by World-Renowned Visionaries
+          </h2>
+</div>
+<div class="lg:col-span-6">
+<p class="text-body-lg font-body-lg text-on-surface-variant font-light">
+            A collaborative masterpiece forged by international Pritzker laureates, acoustic engineers, and botanical landscape theorists to create a permanent paradigm shift in vertical metropolitan living.
+          </p>
+</div>
+</div>
+<!-- Pedigree Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-lg bg-surface-container subtle-border">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary block mb-2">Structural Architecture</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Studio Moreau &amp; Partners</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light leading-relaxed">
+            Renowned for twisting kinetic structures across Tokyo, London, and Zurich that integrate aerospace parametric engineering.
+          </p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container subtle-border">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary block mb-2">Interior Spatial Design</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Atelier Kanso Milano</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light leading-relaxed">
+            Specialists in nocturnal materiality, textured brushed bronzes, Fior di Bosco stone, and bespoke Japanese joinery.
+          </p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container subtle-border">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary block mb-2">Vertical Landscape</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Oehme Biophilic Labs</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-light leading-relaxed">
+            Pioneering high-altitude micro-ecologies that cleanse urban particulates and foster native pollinator sanctuaries.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- VIP PRIVATE CONSULTATION & SALON BOOKING -->
+<section class="py-28 px-6 md:px-16 bg-surface relative overflow-hidden" id="consultation">
+<!-- Ambient backlighting sphere -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-high/60 backdrop-blur-md hairline-gold mb-4">
+<span class="material-symbols-outlined text-primary text-sm">lock</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-primary">Confidential Engagement</span>
+</div>
+<h2 class="text-headline-lg md:text-display-lg font-headline-lg text-on-surface tracking-tight">
+          Request Private Salon Viewing
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4 max-w-xl mx-auto font-light">
+          Discreet off-market acquisitions are facilitated by private appointment at our high-altitude gallery pavilion or via secure encrypted digital salon.
+        </p>
+</div>
+<!-- VIP Booking Form -->
+<form class="p-8 md:p-12 rounded-lg bg-surface-container-low/90 subtle-border backdrop-blur-md shadow-2xl space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Full Legal Name</label>
+<input class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface placeholder-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm" placeholder="Lord / Lady / Dr. / Mr. / Ms." type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Private Direct Email</label>
+<input class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface placeholder-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm" placeholder="client@familyoffice.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Encrypted Contact / Telephone</label>
+<input class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface placeholder-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Residence of Interest</label>
+<select class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm">
+<option>The Sky Villas (3–4 Bedroom)</option>
+<option>The Meridian Duplex (4–5 Bedroom)</option>
+<option>The Celestial Penthouse (Triplex)</option>
+<option>Multi-Unit Portfolio Acquisition</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Preferred Date for Private Viewing</label>
+<input class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm" type="date"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Viewing Format</label>
+<select class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm">
+<option>In-Person at AURA Gallery Pavilion</option>
+<option>Private Chauffeur + On-Site Inspection</option>
+<option>Bespoke Encrypted 3D Holo-Stream</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-on-surface mb-2">Special Spatial or Security Specifications (Optional)</label>
+<textarea class="w-full px-4 py-3 rounded bg-surface-container subtle-border text-on-surface placeholder-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-sm" placeholder="Automotive lift requirements, staff accommodation preferences, or specific skyline orientation..." rows="3"></textarea>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-primary text-base">verified_user</span>
+<span>Non-Disclosure Agreement strictly observed.</span>
+</div>
+<button class="w-full sm:w-auto px-10 py-4 rounded bg-primary text-on-primary text-label-md font-label-md uppercase tracking-widest font-semibold hover:bg-primary-container transition-all duration-300 amber-glow" type="button">
+            Submit Private Inquiry
+          </button>
+</div>
+</form>
+<!-- Concierge Direct Info -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-center">
+<div class="p-4">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-1">Direct Private Desk</span>
+<span class="text-body-md font-body-md text-on-surface font-light">+1 (800) 792-AURA</span>
+</div>
+<div class="p-4">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-1">Private Gallery</span>
+<span class="text-body-md font-body-md text-on-surface font-light">740 Skyline Way, Level 88</span>
+</div>
+<div class="p-4">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-1">Diplomatic Liaison</span>
+<span class="text-body-md font-body-md text-on-surface font-light">concierge@auraskyresidences.com</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER (Shared Component: Footer) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 dark:border-outline-variant/20 full-width bottom flat no shadows">
+<div class="w-full px-6 md:px-16 py-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<!-- Brand & Copyright Anchor -->
+<div class="space-y-3">
+<div class="text-headline-md font-headline-md tracking-[0.25em] text-primary dark:text-primary">
+          AURA SKY RESIDENCES
+        </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xl">
+          © 2025 AURA Sky Residences. Curated Architectural Marvels. All Rights Reserved.
+        </p>
+</div>
+<!-- Links defined in Shared Components JSON -->
+<div class="flex flex-wrap gap-x-8 gap-y-3">
+<a class="text-label-sm font-label-sm uppercase tracking-wider text-primary dark:text-primary underline underline-offset-4 transition-colors duration-200" href="#consultation">Private Appointments</a>
+<a class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#architecture">Legal &amp; Compliance</a>
+<a class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#pedigree">Architectural Archives</a>
+<a class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#amenities">Press &amp; Accolades</a>
+<a class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#hero">Privacy Statement</a>
+</div>
+</div>
+</footer>
+</body></html>
